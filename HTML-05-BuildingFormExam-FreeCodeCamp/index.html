@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Build a Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form id = "survey-form">
+
+<!-- a div for header section-->
+    <div class="header">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </div >
+
+
+<!--end of header, start of input fields-->
+      <fieldset>
+        <label for="name" id="name-label">Name<input class="block" id="name" name="name" type="text" placeholder="enter your name" required /></label>
+        <label for="email" id="email-label">Email<input class="block" id="email" name="email" type="email" placeholder="enter your email" required /></label>
+        <label for="age" id="number-label">Age (optional): <input class="block" id="number" type="number" name="age" min="13" max="120" placeholder="enter your age" /></label>
+    <!-- roles dropdown list -->
+        <label for="role">Which option best describes your current role?
+          <select class="block" id="role" name="roles-dropdown">
+            <option value="0" name="empty">Select Current role</option>
+            <option value="1"  name="R1">Student</option>
+            <option value="2" name="R2">Full Time Job</option>
+            <option value="3" name="R3">Full Time Learner</option>
+            <option value="4"  name="R4">Prefer not to say</option>
+            <option value="5"  name="R5">Other</option>
+          </select>
+        </label>
+      </fieldset>
+
+
+<!--end of first block input, start of radio buttons-->
+      <fieldset>
+        <label class="block" for="D"><input id="D" type="radio" name="recommend" value="1" class="RB" /> Definitely</label>
+        <label class="block" for="M"><input id="M" type="radio" name="recommend" value="2" class="RB" /> Maybe</label>
+        <label class="block" for="N"><input id="N" type="radio" name="recommend" value="3" class="RB" /> Not sure</label>
+      </fieldset>
+
+<!--end of radio buttons, start of favorite feature selection-->
+      <fieldset>
+        <label for="feature">What is your favorite feature of freeCodeCamp?
+          <select class="block" id="dropdown" name="features">
+            <option value="0">Select an option</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open Source</option>
+          </select>
+        </label>
+      </fieldset>
+
+
+<!--end of favorite features options, start of checkboxes-->
+      <fieldset>
+        <label class="block">What would you like to see improved? (Check all that apply)</label>
+        <label class="block" for="improve01"> <input id="improve01" type="checkbox" value="01" required name="improvement" /> Front-end Projects</a>
+        </label>
+        <label class="block" for="improve02"> <input id="improve02" type="checkbox" value="02" required name="improvement" /> Back-end Projects</a>
+        </label>
+        </label>
+        <label class="block" for="improve03"> <input id="improve03" type="checkbox" value="03" required name="improvement" /> Data Visualization</a>
+        </label>
+        </label>
+        <label class="block" for="improve04"> <input id="improve04" type="checkbox" value="04" required name="improvement" /> Challenges</a>
+        </label>
+        </label>
+        <label class="block" for="improve05"> <input id="improve05" type="checkbox" value="05" required name="improvement" /> Open Source Community</a>
+        </label>
+        </label>
+        <label class="block" for="improve06"> <input id="improve06" type="checkbox" value="06" required name="improvement" /> Gitter help rooms</a>
+        </label>
+        </label>
+        <label class="block" for="improve07"> <input id="improve07" type="checkbox" value="07" required name="improvement" /> Videos</a>
+        </label>
+        </label>
+        <label class="block" for="improve08"> <input id="improve08" type="checkbox" value="08" required name="improvement" /> City Meetups</a>
+        </label>
+        </label>
+        <label class="block" for="improve09"> <input id="improve09" type="checkbox" value="09" required name="improvement" /> Wiki</a>
+        </label>
+        </label>
+        <label class="block" for="improve10"> <input id="improve10" type="checkbox" value="10" required name="improvement" /> Forum</a>
+        </label>
+        </label>
+        <label class="block" for="improve11"> <input id="improve11" type="checkbox" value="11" required name="improvement" /> Additional Courses</a>
+        </label>
+      </fieldset>
+
+
+<!--end of improvments checkboxes, start of add comments section-->
+        <label for="comments"> Any comments or suggestions?
+          <textarea id="comments" name="bio" rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+        </label>
+
+      </fieldset>
+
+<!--end of bio, start submit button-->
+      <fieldset>
+      <input id="submit" type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
